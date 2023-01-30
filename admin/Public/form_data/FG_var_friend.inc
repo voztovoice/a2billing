@@ -118,20 +118,19 @@ if ($form_action=="ask-add") {
 
 
 if ($form_action=="ask-add" || $form_action == "add_sip" || $form_action == "add_iax") {
-	$AMAFLAGS_default= "value='".$A2B->config["peer_friend"]['amaflag']."'";
-	$TYPE_default= "value='friend'";
-	$NAT_default= "value='yes'";
-	$DTMFMODE_default= "value='RFC2833'";
-	$CANREINVITE_default= "value='yes'";
-	$DISALLOW_default= "value='all'";
-	$ALLOW_default= "value='ulaw,alaw,gsm,g729'";
-	$HOST_default= "value='dynamic'";
-	$CONTEXT_default= "value='".$A2B->config["peer_friend"]['context']."'";
-	$REGSECONDS_default= "value='0'";
-	$CANCALLFORWARD_default= "value='yes'";
-	$TRUNK_default= "value='yes'";
+        $AMAFLAGS_default= "value='".$A2B->config["peer_friend"]['amaflag']."'";
+        $TYPE_default= "value='friend'";
+        $NAT_default= "value='force_rport,comedia'";
+        $DTMFMODE_default= "value='RFC2833'";
+        $CANREINVITE_default= "value='no'";
+        $DISALLOW_default= "value='all'";
+        $ALLOW_default= "value='ulaw,alaw'";
+        $HOST_default= "value='dynamic'";
+        $CONTEXT_default= "value='".$A2B->config["peer_friend"]['context']."'";
+        $REGSECONDS_default= "value='0'";
+        $CANCALLFORWARD_default= "value='no'";
+        $TRUNK_default= "value='yes'";
 }
-
 
 $HD_Form -> AddEditElement (gettext("ID CARD"),
 							"id_cc_card",
