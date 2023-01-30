@@ -144,8 +144,10 @@ host=<?php echo SIP_IAX_INFO_HOST; ?>
 
 fromuser=<?php echo $sip_iax_data[0][1]?>
 
-context=<?php echo $sip_iax_data[0][7]?> ; change for proper context
-allow=<?php echo SIP_IAX_INFO_ALLOWCODEC?> ; we support ulaw,alaw,ilbc,gsm,g723.1,g726,g729a
+context=<?php echo $sip_iax_data[0][7]?>
+
+disallow=all
+allow=<?php echo SIP_IAX_INFO_ALLOWCODEC?> ; soportamos alaw,ulaw,g729
 <?php
 if (count($additional_sip) > 0) {
     for ($i = 0; $i< count($additional_sip); $i++) {
