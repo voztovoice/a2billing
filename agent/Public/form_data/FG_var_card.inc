@@ -762,7 +762,7 @@ $HD_Form -> AddEditElement (gettext("CREATE SIP CONFIG"),
 
 $HD_Form -> AddEditElement (gettext("CREATE IAX CONFIG"),
 			   "iax_buddy",
-			   '1',
+			   '0',
 			   "RADIOBUTTON",
 			   "",
 			   "",
