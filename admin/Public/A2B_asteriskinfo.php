@@ -138,7 +138,7 @@ $arr_voicemail = array(
     "Voicemail users" => "voicemail show users",
 );
 
-if (ASTERISK_VERSION == '1_4'|| ASTERISK_VERSION == '1_6') {
+if (ASTERISK_VERSION == '1_16'|| ASTERISK_VERSION == '1_18') {
     $arr_all["Uptime"]="core show uptime";
     $arr_all["Active Channel(s)"]="core show channels";
     $arr_all["Subscribe/Notify"]="core show hints";
@@ -147,7 +147,7 @@ if (ASTERISK_VERSION == '1_4'|| ASTERISK_VERSION == '1_6') {
     $arr_codecs["Codecs"]="core show translation";
     $arr_channels["Active Channel(s)"]="core show channels";
     $arr_subscriptions["Subscribe/Notify"]="core show hints";
-    $arr_voicemail["Voicemail users"]="voicemail show users";
+    $arr_voicemail["Voicemail users"]="voicemail show users for default";
 }
 
 ?>
@@ -361,7 +361,7 @@ function buildAsteriskInfo()
         "IAX2 Peers" => "iax2 show peers",
     );
 
-    if (ASTERISK_VERSION == '1_4'|| ASTERISK_VERSION == '1_6') {
+    if (ASTERISK_VERSION == '1_16'|| ASTERISK_VERSION == '1_18') {
         $arr['Uptime'] = 'core show uptime';
     }
 
