@@ -781,7 +781,7 @@ if (has_rights (ACX_MODIFY_CUSTOMERS) && !($popup_select>=1)) {
 
     $HD_Form -> AddEditElement (gettext("CREATE IAX CONFIG"),
                    "iax_buddy",
-                   '1',
+                   '0',
                    "RADIOBUTTON",
                    "",
                    "",
