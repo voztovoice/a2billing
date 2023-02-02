@@ -8,7 +8,9 @@ fi
 # Identify Linux Distribution type
 if [ -f /etc/debian_version ] ; then
     DIST='DEBIAN'
-elif [ -f /etc/redhat-release ] ; then
+elif [ -f /etc/almalinux-release ] ; then
+    DIST='CENTOS'
+elif [ -f /etc/rocky-release ] ; then
     DIST='CENTOS'
 else
     echo ""
